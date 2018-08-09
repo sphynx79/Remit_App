@@ -6,7 +6,7 @@
   "plugin": false,
   "window": {
     "title": "Ampere",
-    "icon": "Ampere.ico",
+    "icon": "Ampere_next.ico",
     "frame": true,
     "position": "center",
     "fullscreen": false,
