@@ -1,0 +1,44 @@
+{
+    "name": "Amper",
+    "description": "Applicativo Desktop per Amper",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "set APP_ENV=development & nw src/",
+        "build": "build --tasks win-x64 --concurrent --mirror https://cnpmjs.org/mirrors/nwjs/ ."
+    },
+    "build": {
+        "appId": "Ampere",
+        "nwVersion": "latest",
+        "targets": [
+            "nsis7z"
+        ],
+        "strippedProperties": [
+            "build"
+        ],
+        "outputPattern": "${NAME} ${VERSION} ${PLATFORM} ${ARCH}",
+        "win": {
+            "productName": "Ampere",
+            "companyName": "Sphynx",
+            "copyright": "sphynx",
+            "icon": "./Ampere.ico"
+        },
+        "nsis": {
+            "installDirectory": "$PROGRAMFILES\\${_APPNAME}",
+            "diffUpdaters": true
+        }
+    },
+    "devDependencies": {
+        "eslint": "^4.19.1",
+        "eslint-config-prettier": "^2.9.0",
+        "eslint-plugin-prettier": "^2.6.0",
+        "nwjs-builder-phoenix": "^1.14.6",
+        "prettier": "^1.13.5"
+    },
+    "window": {
+        "icon": "./Ampere.ico"
+    },
+    "dependencies": {
+        "nw": "^0.30.2-sdk"
+    }
+}

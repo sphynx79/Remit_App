@@ -1,0 +1,68 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\APPL\Yarn\bin\yarn.js add -D prettier
+
+PATH: 
+  C:\APPL\cmder\bin;C:\APPL\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\APPL\cmder\vendor\conemu-maximus5;C:\APPL\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files (x86)\Common Files\AspenTech Shared;C:\ProgramData\Oracle\Java\javapath;C:\RubySystem\bin;C:\Users\en27553\AppData\Local\Yarn\bin;C:\Program Files\Python36;C:\Program Files\Python36\Scripts;C:\APPL\Cmake\bin;C:\APPL\bin;C:\APPL\cmder\vendor\git-for-windows\cmd\;C:\APPL\Mongodb\bin;C:\APPL\Vim80;C:\APPL\Highlight;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files (x86)\Inno Setup 5;C:\msys64\mingw64\bin;C:\msys64\usr\bin;C:\APPL\Yarn\bin;C:\APPL\R-3.4.2\bin;C:\Program Files\nodejs\;C:\APPL\Yarn\bin\;C:\Program Files\Process Lasso\;C:\Program Files\Microsoft VS Code\bin;C:\Users\en27553\AppData\Roaming\npm;C:\Users\en27553\AppData\Local\Yarn\bin;C:\APPL\cmder\vendor\git-for-windows\usr\bin;C:\APPL\cmder\vendor\git-for-windows\usr\share\vim\vim74;C:\APPL\cmder\
+
+Yarn version: 
+  1.6.0
+
+Node version: 
+  8.11.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EBUSY: resource busy or locked, unlink 'C:\Users\en27553\Desktop\Remit_App\node_modules\nw\nwjs\natives_blob.bin'
+
+npm manifest: 
+  {
+      "name": "Amper",
+      "description": "Applicativo Desktop per Amper",
+      "version": "1.0.0",
+      "main": "index.js",
+      "scripts": {
+          "start": "set APP_ENV=development & nw src/",
+          "build": "build --tasks win-x64 --concurrent --mirror https://cnpmjs.org/mirrors/nwjs/ ."
+      },
+      "build": {
+          "appId": "Ampere",
+          "nwVersion": "latest",
+          "targets": [
+              "nsis7z"
+          ],
+          "strippedProperties": [
+              "build"
+          ],
+          "outputPattern": "${NAME} ${VERSION} ${PLATFORM} ${ARCH}",
+          "win": {
+              "productName": "Ampere",
+              "companyName": "Sphynx",
+              "copyright": "sphynx",
+              "icon": "./Ampere.ico"
+          },
+          "nsis": {
+              "installDirectory": "$PROGRAMFILES\\${_APPNAME}",
+              "diffUpdaters": true
+          }
+      },
+      "devDependencies": {
+          "eslint": "^4.19.1",
+          "eslint-config-prettier": "^2.9.0",
+          "eslint-plugin-prettier": "^2.6.0",
+          "nwjs-builder-phoenix": "^1.14.6"
+      },
+      "window": {
+          "icon": "./Ampere.ico"
+      },
+      "dependencies": {
+          "nw": "^0.30.2-sdk"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

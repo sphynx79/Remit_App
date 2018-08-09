@@ -1,0 +1,17 @@
+{
+  "name": "Ampere",
+  "main": "index.html",
+  "version": "0.1.0",
+  "node-remote": "*://*",
+  "plugin": false,
+  "window": {
+    "title": "Ampere",
+    "icon": "Ampere.ico",
+    "frame": true,
+    "position": "center",
+    "fullscreen": false,
+    "min_width": 1000,
+    "min_height": 800
+   },
+   "chromium-args" : "--flag-switches-begin --enable-experimental-web-platform-features --enable-native-gpu-memory-buffers --enable-zero-copy --num-raster-threads=4 --v8-cache-options=code --v8-cache-strategies-for-cache-storage=aggressive --enable-experimental-canvas-features --javascript-harmony --enable-gpu-rasterization --flag-switches-end"
+}
